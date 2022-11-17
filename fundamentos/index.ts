@@ -21,7 +21,18 @@ let a: boolean = true;
 let b: boolean = false;
 
 function boo (a: boolean) {
-    console.log('Verdadeiro');
+    if (a) {
+        console.log('Verdadeiro');
+    }else {
+        console.log('Falso');
+    }
 }
 
-boo(a);
+boo(b);
+
+let m: number = 10;
+let c = '';
+
+c = m.toString();
+
+console.log(`O número é o ${c}`);

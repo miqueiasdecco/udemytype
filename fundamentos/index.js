@@ -1,5 +1,6 @@
-var x = 10;
-var y = 15.9874098;
+"use strict";
+let x = 10;
+let y = 15.9874098;
 console.log(x);
 console.log(typeof x);
 function sun(n1, n2) {
@@ -7,15 +8,24 @@ function sun(n1, n2) {
 }
 console.log(sun(x, y).toPrecision(4));
 //string
-var firstName = 'Miqueias';
-var lastName = 'Decco';
-var fullName = firstName + ' ' + lastName;
+let firstName = 'Miqueias';
+let lastName = 'Decco';
+let fullName = firstName + ' ' + lastName;
 console.log(fullName);
 console.log(typeof fullName);
 //boolean
-var a = true;
-var b = false;
+let a = true;
+let b = false;
 function boo(a) {
-    console.log('Verdadeiro');
+    if (a) {
+        console.log('Verdadeiro');
+    }
+    else {
+        console.log('Falso');
+    }
 }
-boo(a);
+boo(b);
+let m = 10;
+let c = '';
+c = m.toString();
+console.log(`O número é o ${c}`);
